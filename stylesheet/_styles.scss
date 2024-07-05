@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Circular Std", "sans-serif";
+  .header {
+    @include flex(space-between, center, 0.625rem);
+    margin: 2.0625rem 1rem;
+    @media screen and (min-width: 64rem) {
+      margin: 2rem 4rem;
+    }
+    @media screen and (min-width: 90rem) {
+      max-width: 74rem;
+      margin: 2rem auto;
+      width: 100%;
+    }
+    .hamburger-menu {
+      display: none;
+      width: 3rem;
+      height: 3rem;
+      @media screen and (min-width: 64rem) {
+        display: flex;
+      }
+      @media screen and (min-width: 90rem) {
+        display: none;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .logo {
+      width: 8.875rem;
+      height: 2.5rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    ul {
+      @include flex(start, center, 4rem);
+      display: none;
+      @media screen and (min-width: 90rem) {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          @include font-styles($lightGrey, 0.875rem, 1.05rem, 700, 0, start);
+          &:hover {
+            color: $darkGrey;
+          }
+        }
+      }
+    }
+    .button-listing {
+      display: none;
+      @media screen and (min-width: 64rem) {
+        display: flex;
+      }
+      button {
+        &:nth-child(1) {
+          @include font-styles($darkGrey, 0.875rem, 1.05rem, 700, 0, start);
+          padding: 1.0075rem 1.9688rem;
+          border: none;
+          background: transparent;
+        }
+        &:nth-child(2) {
+          @include font-styles($textColor, 0.875rem, 1.05rem, 700, 0, start);
+          background: $buttonColor;
+          border-radius: 100px;
+          padding: 1.0075rem 1.9438rem;
+          border: none;
+        }
+      }
+    }
+    .mobile-menu {
+      width: 3rem;
+      height: 3rem;
+
+      @media screen and (min-width: 64rem) {
+        display: none;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .image-banner {
+    padding: 2rem 0;
+    position: relative;
+    max-width: 24.875rem;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: 64rem) {
+      max-width: 56.125rem;
+      padding: 64px 0;
+    }
+    @media screen and (min-width: 90rem) {
+      max-width: 74rem;
+      padding: 64px 0;
+      @include flex(start, center, 0, row-reverse);
+    }
+    .image-listing {
+      height: 22.875rem;
+      max-width: 24.75rem;
+      width: 100%;
+      margin: 0 auto;
+      @media screen and (min-width: 64rem) {
+        max-width: 48.25rem;
+        height: 44.5625rem;
+      }
+
+      .image-wrapper {
+        @include flex(center, center, 0, column);
+        position: relative;
+        > img {
+          &:nth-child(1) {
+            width: 21.1875rem;
+            height: 8.75rem;
+            @media screen and (min-width: 64rem) {
+              width: 41.25rem;
+              height: 16.6875rem;
+            }
+          }
+          &:nth-child(2) {
+            width: 5.3125rem;
+            height: 7.0625rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @media screen and (min-width: 64rem) {
+              width: 10.75rem;
+              height: 15.25rem;
+              transform: rotate(1deg);
+              top: -23px;
+              right: -11px;
+            }
+          }
+          &:nth-child(3) {
+            width: 12.5rem;
+            height: 6.6875rem;
+            position: absolute;
+            top: -0.4375rem;
+            right: 5.5rem;
+            transform: rotate(-2deg);
+            @media screen and (min-width: 64rem) {
+              width: 24.4375rem;
+              height: 13.0625rem;
+              top: -1.25rem;
+              right: 10.125rem;
+            }
+          }
+          &:nth-child(4) {
+            width: 7.375rem;
+            height: 7.8125rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media screen and (min-width: 64rem) {
+              width: 14.375rem;
+              height: 15.1875rem;
+            }
+          }
+        }
+      }
+      .gallery-listing {
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 324px;
+        @media screen and (min-width: 64rem) {
+          top: 7.9375rem;
+        }
+        .image-gallery {
+          @include flex(center, center, 0.9375rem);
+          @media screen and (min-width: 64rem) {
+            gap: 2rem;
+          }
+          @media screen and (min-width: 90rem) {
+            position: absolute;
+            right: 6.875rem;
+          }
+          .image-column {
+            @include flex(start, start, 0.9375rem, column);
+            @media screen and (min-width: 64rem) {
+              gap: 2rem;
+            }
+            .img-wrapper {
+              position: relative;
+              height: 9.625rem;
+              @media screen and (min-width: 64rem) {
+                width: 17rem;
+                height: 18.75rem;
+              }
+              > img {
+                width: 8.6875rem;
+                height: 9.625rem;
+                object-fit: cover;
+                border-radius: 32px;
+                @media screen and (min-width: 64rem) {
+                  width: 17rem;
+                  height: 18.75rem;
+                }
+              }
+
+              .telegram {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: $telegramBgColor;
+                @include flex(center, center, 0);
+                position: absolute;
+                bottom: -12px;
+                left: -14px;
+                box-shadow: 0px 9.75px 9.75px 0px $iconShadow;
+                @media screen and (min-width: 64rem) {
+                  width: 4rem;
+                  height: 4rem;
+                }
+
+                img {
+                  height: 1rem;
+                  width: 1rem;
+                  @media screen and (min-width: 64rem) {
+                    height: 2rem;
+                    width: 2rem;
+                    bottom: -2.0625rem;
+                    left: -2.1875rem;
+                  }
+                }
+              }
+            }
+            .mountain-img {
+              width: 8.6875rem;
+              height: 9.625rem;
+              object-fit: cover;
+              border-radius: 32px;
+              @media screen and (min-width: 64rem) {
+                width: 17rem;
+                height: 18.75rem;
+              }
+            }
+          }
+          .label-image {
+            position: relative;
+            img {
+              width: 8.6875rem;
+              height: 12.8125rem;
+              border-radius: 32px;
+              @media screen and (min-width: 64rem) {
+                width: 17rem;
+                height: 25rem;
+              }
+            }
+            .label {
+              position: absolute;
+              bottom: 1.5rem;
+              right: -3.3125rem;
+              width: 5.3256rem;
+              height: 1.7969rem;
+              background: $primaryColor;
+              border-radius: 51.33px;
+              @include flex(center, center, 0.3125rem);
+              padding: 0 0.625rem;
+              box-shadow: 0px 22.07px 13.35px 0px $shadowMain;
+              @media screen and (min-width: 64rem) {
+                width: 10.375rem;
+                height: 3.5rem;
+                bottom: 2.9375rem;
+                right: -6.25rem;
+              }
+
+              img {
+                width: 0.77rem;
+                height: 0.77rem;
+                @media screen and (min-width: 64rem) {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                }
+              }
+              span {
+                @include font-styles(
+                  $darkGrey,
+                  0.4494rem,
+                  0.4763rem,
+                  700,
+                  0,
+                  start
+                );
+                @media screen and (min-width: 64rem) {
+                  font-size: 0.875rem;
+                }
+              }
+            }
+            .profile {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background-color: $profileBgcolor;
+              @include flex(center, center, 0);
+              position: absolute;
+              bottom: -3.5625rem;
+              right: 4.0625rem;
+              box-shadow: 0px 9.75px 9.75px 0px $iconShadow;
+              @media screen and (min-width: 64rem) {
+                width: 4rem;
+                height: 4rem;
+                bottom: -7.625rem;
+                right: 8rem;
+              }
+
+              img {
+                height: 1rem;
+                width: 1rem;
+                @media screen and (min-width: 64rem) {
+                  height: 2rem;
+                  width: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .content-listing {
+      @include flex(center, center, 0, column);
+      margin-top: 2rem;
+      @media screen and (min-width: 64rem) {
+        margin-top: 4rem;
+      }
+      @media screen and (min-width: 90rem) {
+        margin-top: 0;
+        width: 25.75rem;
+      }
+      .label {
+        width: 14rem;
+        height: 3.5rem;
+        border-radius: 6.25rem;
+        background: $primaryColor;
+        @include flex(center, center, 1rem);
+        box-shadow: 0px 34px 75px 0px #00000012;
+
+        span {
+          @include font-styles(
+            $telegramBgColor,
+            0.875rem,
+            1rem,
+            700,
+            0,
+            center
+          );
+        }
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+      h1 {
+        margin-top: 1rem;
+        @media screen and (min-width: 64rem) {
+          font-size: 3.5rem;
+          line-height: 4.1875rem;
+          width: 35.4375rem;
+          margin-top: 2.625rem;
+        }
+        @media screen and (min-width: 90rem) {
+          width: 100%;
+          margin-top: 2.625rem;
+        }
+        span {
+          color: $telegramBgColor;
+        }
+      }
+      p {
+        margin-top: 24px;
+        font-family: "inter", "sans-serif";
+        @media screen and (min-width: 64rem) {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          width: 28.125rem;
+          margin-top: 2.6875rem;
+        }
+        @media screen and (min-width: 90rem) {
+          width: 100%;
+        }
+      }
+      .button-listing {
+        margin-top: 2rem;
+        @include flex(center, center, 24px, column);
+        width: 100%;
+        @media screen and (min-width: 64rem) {
+          margin-top: 2.6875rem;
+          flex-direction: row;
+          gap: 1rem;
+          width: 21.125rem;
+        }
+        button {
+          @include font-styles($textColor, 0.875rem, 1.05rem, 700, 0, center);
+          padding: 25px 0;
+          width: 100%;
+          border: none;
+          background-color: $buttonColor;
+          border-radius: 100px;
+          box-shadow: 0px 45px 27px 0px $buttonShadow;
+          @media screen and (min-width: 64rem) {
+            padding: auto;
+            width: 8.8125rem;
+            height: 3.0625rem;
+            @include flex(center, center, 0);
+          }
+        }
+        .demo {
+          padding: 1.3125rem 0;
+          width: 100%;
+          border: 1px solid $textColor;
+          background-color: $primaryColor;
+          border-radius: 100px;
+          @include flex(center, center, 0.2188rem);
+          @media screen and (min-width: 64rem) {
+            width: 11.3125rem;
+            height: 3.5rem;
+          }
+          img {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+          input {
+            border: none;
+            background: transparent;
+            @include font-styles($darkGrey, 0.875rem, 1.05rem, 700, 0, center);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,56 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-Bold.woff2") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-BoldItalic.woff2") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-BookItalic.woff2") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-Book.woff2") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-BookItalic.woff2") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-Medium.woff2") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-MediumItalic.woff2") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts/CircularStd-Black.woff2") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
+
 h1 {
-  @include font-styles($secondaryColor, 2.5rem, 3rem, 700, 0, center);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
 }
-p {
-  @include font-styles($lightGrey, 1rem, 1.6rem, 400, 0, center);
-}
+
+/*# sourceMappingURL=_typography.css.map */
