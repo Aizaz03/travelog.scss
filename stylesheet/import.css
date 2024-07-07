@@ -67,8 +67,17 @@ h2 {
 
 h4 {
   color: #000;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 28.8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+h6 {
+  color: #000;
+  font-size: 1.4375rem;
+  line-height: 1.4375rem;
   font-weight: 700;
   letter-spacing: 0;
   text-align: center;
@@ -922,4 +931,218 @@ body .services-section .services .card-listing .card p {
   font-family: "Inter", "sans-serif";
   font-size: 1.125rem;
   line-height: 1.8rem;
+}
+body .destination {
+  padding: 32px 0;
+  max-width: 24.875rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 64rem) {
+  body .destination {
+    max-width: 56rem;
+    padding: 4rem 0;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination {
+    max-width: 74rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 0.625rem;
+  }
+}
+body .destination .content .heading span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  color: #f85e9f;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .content .heading span {
+    font-size: 1.4375rem;
+    line-height: 1.725rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination .content .heading span {
+    text-align: left;
+    justify-content: start;
+  }
+}
+body .destination .content .heading h2 {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .content .heading h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination .content .heading h2 {
+    text-align: left;
+  }
+}
+body .destination .content .button-listing {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .content .button-listing {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+body .destination .content .button-listing .button {
+  height: 4rem;
+  width: 4rem;
+  border: 0.0625rem solid rgba(25, 24, 37, 0.1019607843);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 50%;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .content .button-listing .button {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+body .destination .content .button-listing .button:hover {
+  background: #5d50c6;
+  border: none;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.0705882353);
+}
+body .destination .content .button-listing .button:hover img {
+  filter: brightness(0) invert(1);
+}
+body .destination .content .button-listing .button img {
+  filter: brightness(10) invert(1);
+}
+@media screen and (min-width: 64rem) {
+  body .destination .content .button-listing .button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+body .destination .card-listing {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .card-listing {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 64rem) and (min-width: 64rem) {
+  body .destination .card-listing {
+    margin-top: 4.1875rem;
+  }
+}
+body .destination .card-listing .card {
+  box-shadow: 0px 32px 71px 0px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 32px;
+  width: 24.875rem;
+  height: 35.9375rem;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .card-listing .card {
+    width: 17.375rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination .card-listing .card {
+    width: 23.3331rem;
+  }
+}
+body .destination .card-listing .card img {
+  width: 24.875rem;
+  height: 19.625rem;
+  border-radius: 32px 32px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 64rem) {
+  body .destination .card-listing .card img {
+    width: 17.375rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .destination .card-listing .card img {
+    width: 23.3331rem;
+  }
+}
+body .destination .card-listing .card .description {
+  padding: 2.3125rem;
+}
+@media screen and (min-width: 90rem) {
+  body .destination .card-listing .card .description .price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0.625rem;
+  }
+}
+body .destination .card-listing .card .description .price span {
+  color: #f85e9f;
+  font-size: 1.4375rem;
+  line-height: 1.725rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+body .destination .card-listing .card .description .price h6 {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+body .destination .card-listing .card .description p {
+  margin-top: 1rem;
+  text-align: left;
+  color: rgba(25, 24, 37, 0.7490196078);
+}
+body .destination .card-listing .card .description .rating {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+body .destination .card-listing .card .description .rating span {
+  color: #ff5722;
+  font-size: 1.4375rem;
+  line-height: 1.725rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: start;
+}
+body .destination .card-listing .card .description .rating img {
+  height: 1.5rem;
+  width: 1.5rem;
 }/*# sourceMappingURL=import.css.map */

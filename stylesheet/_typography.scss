@@ -55,7 +55,10 @@ h2 {
   @include font-styles($secondaryColor, 2rem, 2.4rem, 700, 0, center);
 }
 h4 {
-  @include font-styles($secondaryColor, 24px, 28.8px, 700, 0, center);
+  @include font-styles($secondaryColor, 1.5rem, 28.8px, 700, 0, center);
+}
+h6 {
+  @include font-styles($secondaryColor, 1.4375rem, 1.4375rem, 700, 0, center);
 }
 p {
   @include font-styles($lightGrey, 1rem, 1.6rem, 400, 0, center);

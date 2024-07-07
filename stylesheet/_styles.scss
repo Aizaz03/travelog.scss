@@ -640,4 +640,168 @@ body {
       }
     }
   }
+  .destination {
+    padding: 32px 0;
+    max-width: 24.875rem;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: 64rem) {
+      max-width: 56rem;
+      padding: 4rem 0;
+    }
+    @media screen and (min-width: 90rem) {
+      max-width: 74rem;
+    }
+    .content {
+      @media screen and (min-width: 90rem) {
+        @include flex(space-between, end, 0.625rem);
+      }
+      .heading {
+        span {
+          @include flex(center, center, 0);
+          @include font-styles(
+            $telegramBgColor,
+            1rem,
+            1.2rem,
+            700,
+            0.2em,
+            center
+          );
+          @media screen and (min-width: 64rem) {
+            font-size: 1.4375rem;
+            line-height: 1.725rem;
+          }
+          @media screen and (min-width: 90rem) {
+            text-align: left;
+            justify-content: start;
+          }
+        }
+        h2 {
+          margin-top: 1rem;
+          @media screen and (min-width: 64rem) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
+          @media screen and (min-width: 90rem) {
+            text-align: left;
+          }
+        }
+      }
+      .button-listing {
+        margin-top: 2rem;
+        @include flex(space-between, center, 1.25rem);
+        @media screen and (min-width: 64rem) {
+          justify-content: center;
+          gap: 2rem;
+          margin-top: 4rem;
+        }
+        .button {
+          height: 4rem;
+          width: 4rem;
+          border: 0.0625rem solid $borderColor;
+          @include flex(center, center, 0);
+          border-radius: 50%;
+          @media screen and (min-width: 64rem) {
+            width: 6.25rem;
+            height: 6.25rem;
+          }
+
+          &:hover {
+            background: $buttonColor;
+            border: none;
+            box-shadow: 0px 7px 16px 0px #00000012;
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
+          img {
+            filter: brightness(10) invert(1);
+            @media screen and (min-width: 64rem) {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .card-listing {
+      margin-top: 2rem;
+      @include flex(start, start, 2rem, column);
+      @media screen and (min-width: 64rem) {
+        flex-direction: row;
+        @media screen and (min-width: 64rem) {
+          margin-top: 4.1875rem;
+        }
+      }
+      .card {
+        box-shadow: 0px 32px 71px 0px #0000000d;
+        border-radius: 32px;
+        width: 24.875rem;
+        height: 35.9375rem;
+        @media screen and (min-width: 64rem) {
+          width: 17.375rem;
+        }
+        @media screen and (min-width: 90rem) {
+          width: 23.3331rem;
+        }
+        img {
+          width: 24.875rem;
+          height: 19.625rem;
+          border-radius: 32px 32px 0px 0px;
+          object-fit: cover;
+          @media screen and (min-width: 64rem) {
+            width: 17.375rem;
+          }
+          @media screen and (min-width: 90rem) {
+            width: 23.3331rem;
+          }
+        }
+        .description {
+          padding: 2.3125rem;
+          .price {
+            @media screen and (min-width: 90rem) {
+              @include flex(space-between, start, 0.625rem, row-reverse);
+            }
+            span {
+              @include font-styles(
+                $telegramBgColor,
+                1.4375rem,
+                1.725rem,
+                700,
+                0,
+                center
+              );
+            }
+            h6 {
+              margin-top: 0.5rem;
+              text-align: left;
+            }
+          }
+          p {
+            margin-top: 1rem;
+            text-align: left;
+            color: $paragraphColor;
+          }
+          .rating {
+            margin-top: 2rem;
+            @include flex(start, center, 0.5rem);
+            span {
+              @include font-styles(
+                $profileBgcolor,
+                1.4375rem,
+                1.725rem,
+                700,
+                0,
+                start
+              );
+            }
+            img {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
