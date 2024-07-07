@@ -56,6 +56,24 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: #000;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+h4 {
+  color: #000;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+
 p {
   color: rgba(25, 24, 37, 0.5019607843);
   font-size: 1rem;
@@ -81,6 +99,7 @@ body .header {
   align-items: center;
   gap: 0.625rem;
   margin: 2.0625rem 1rem;
+  position: relative;
 }
 @media screen and (min-width: 64rem) {
   body .header {
@@ -92,6 +111,28 @@ body .header {
     max-width: 74rem;
     margin: 2rem auto;
     width: 100%;
+  }
+}
+body .header .circle {
+  display: none;
+}
+@media screen and (min-width: 64rem) {
+  body .header .circle {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 50%;
+    top: -276px;
+    left: -422px;
+    filter: blur(200px);
+    background: #ff5722;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .header .circle {
+    display: none;
   }
 }
 body .header .hamburger-menu {
@@ -652,4 +693,233 @@ body .image-banner .content-listing .button-listing .demo input {
   font-weight: 700;
   letter-spacing: 0;
   text-align: center;
+}
+body .brand-listing {
+  max-width: 24.875rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6875rem;
+  padding: 2rem 0;
+  position: relative;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing {
+    margin-top: 2rem;
+    padding: 4rem 0;
+    max-width: 35.4681rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .brand-listing {
+    max-width: 74rem;
+    gap: 6.125rem;
+    margin-top: 0;
+  }
+}
+body .brand-listing img:nth-child(1) {
+  width: 8.25rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(1) {
+    width: 13.2394rem;
+    height: 2rem;
+  }
+}
+body .brand-listing img:nth-child(2) {
+  width: 4.4162rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(2) {
+    width: 7.0663rem;
+    height: 2rem;
+  }
+}
+body .brand-listing img:nth-child(3) {
+  width: 7.3675rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(3) {
+    width: 11.7875rem;
+    height: 2rem;
+  }
+}
+body .brand-listing img:nth-child(4) {
+  width: 4.005rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(4) {
+    width: 6.4081rem;
+    height: 2rem;
+  }
+}
+body .brand-listing img:nth-child(5) {
+  width: 6.78rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(5) {
+    width: 173.57px;
+    height: 2rem;
+  }
+}
+body .brand-listing img:nth-child(6) {
+  display: none;
+}
+@media screen and (min-width: 64rem) {
+  body .brand-listing img:nth-child(6) {
+    display: flex;
+    position: absolute;
+    top: -224px;
+    left: -182px;
+    width: 4.0625rem;
+    height: 10.5625rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .brand-listing img:nth-child(6) {
+    top: -104px;
+    left: -85px;
+  }
+}
+body .services-section {
+  overflow-x: auto;
+}
+body .services-section .services {
+  max-width: 24.875rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services {
+    max-width: 56rem;
+    margin-top: 0;
+    padding: 4rem 0;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .services-section .services {
+    max-width: 96rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 0 0 4rem 8rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .services-section .services .content {
+    width: 27.75rem;
+    justify-content: start;
+    align-items: start;
+  }
+}
+body .services-section .services .content span {
+  display: block;
+  color: #f85e9f;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .content span {
+    font-size: 1.4375rem;
+    line-height: 1.725rem;
+  }
+}
+body .services-section .services .content h2 {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .content h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .content h2 {
+    text-align: start;
+  }
+}
+body .services-section .services .card-listing {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .card-listing {
+    margin-top: 4rem;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 64rem) and (min-width: 90rem) {
+  body .services-section .services .card-listing {
+    width: 100%;
+  }
+}
+body .services-section .services .card-listing .card {
+  border: 1px solid rgba(25, 24, 37, 0.1019607843);
+  border-radius: 2rem;
+  padding: 1.9563rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body .services-section .services .card-listing .card:hover {
+  border: none;
+  box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.1019607843);
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .card-listing .card {
+    padding: 4rem 4rem 2.1875rem;
+    width: 18rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body .services-section .services .card-listing .card {
+    width: 21.875rem;
+    height: 27.6875rem;
+    padding: 4rem;
+  }
+}
+body .services-section .services .card-listing .card img {
+  width: 4rem;
+  height: 4rem;
+}
+@media screen and (min-width: 64rem) {
+  body .services-section .services .card-listing .card h4 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+}
+body .services-section .services .card-listing .card p {
+  font-family: "Inter", "sans-serif";
+  font-size: 1.125rem;
+  line-height: 1.8rem;
 }/*# sourceMappingURL=import.css.map */
