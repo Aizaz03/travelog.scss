@@ -54,6 +54,9 @@ h1 {
 h2 {
   @include font-styles($secondaryColor, 2rem, 2.4rem, 700, 0, center);
 }
+h3 {
+  @include font-styles($secondaryColor, 1.75rem, 2.1rem, 700, 0, center);
+}
 h4 {
   @include font-styles($secondaryColor, 1.5rem, 28.8px, 700, 0, center);
 }
